@@ -50,7 +50,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "Spark Core Temperature Sensor", namespace: "krvarma/sparktemperature", author: "Krishnaraj Varma") {
+	definition (name: "DHT33 Temperature Sensor", namespace: "ScottBushnell", author: "Scott Bushnell") {
 		capability "Polling"
 		capability "Temperature Measurement"
         capability "Relative Humidity Measurement"
@@ -63,7 +63,7 @@ metadata {
 
 	tiles {
 		valueTile("temperature", "device.temperature", width: 2, height: 2){
-            state "temperature", label: '${currentValue}°C', unit:"",
+            state "temperature", label: '${currentValue}Â°C', unit:"",
             	backgroundColors: [
                     [value: 25, color: "#202040"],
                     [value: 30, color: "#202080"]
